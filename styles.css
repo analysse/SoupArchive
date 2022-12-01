@@ -1,0 +1,129 @@
+h1 {
+  font-family: Arial;
+}
+
+h4 {
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  font-family: Helvetica;
+  font-size: 14px;
+  color: #1F1F1F;
+}
+
+.heading {
+  font-family: Sofia;
+  color: #A54A4A;
+  font-size: 20px;
+}
+
+body {
+  background-color: #EAE7DE;
+}
+
+.bolded {
+  font-weight: bold;
+}
+
+#nav {
+  width: 100%;
+  overflow: auto; 
+  background-color: #CE7054;
+}
+
+#nav a {
+  display: inline-block;
+  padding: 11px;
+  text-decoration: none;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+
+#titleBanner {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background-image: url("hot-soup.png"); 
+  background-size: 28%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: 0px 3px 3px #ABABAB;
+}
+
+#titleBanner h1 {
+  font-family: Gill Sans;
+  color: #DA7557;
+  text-shadow: 0px 3px 3px #ABABAB;
+  font-size: 240%;
+  bottom: 0;
+  left: 0;
+  line-height: 5%;
+ text-align: center;
+}
+
+#titleBanner h1.tp {
+  font-size: 150%;
+}
+
+#columns {
+  padding-left: 4vh;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+  box-shadow: 0px 4px 4px #5B5B5D;
+  background-color: #EEAE9B;
+}
+#columns p {
+  font-size: 20px;
+  font-family: Verdana; 
+}
+#columns div#ingredients{ flex-basis:28%; }
+#columns div#equipment{ flex-basis:20%; }
+#columns div#directions{ flex-basis:50%; }
+
+
+* {
+  box-sizing: border-box;
+}
+
+#footer{
+  paddding: 30px;
+  font-family: Helvetica;
+  font-size: 15px;
+  font-style: italic;
+  text-align: center;
+  color: #C86D52;
+}
+
+#questions{
+  paddding: 30px;
+  font-family: Helvetica;
+  font-size: 20px;
+  text-align: center;
+  color: #C86D52;
+}
+
+div{
+  display: block;
+}
+@media screen and (orientation: portrait) and (max-width: 575px) {
+  #columns {
+    padding: 1vh 3vh 3vh 3vh;
+    display: block;
+  }
+  #titleBanner {
+    height: 50vh;
+  }
+  #footer{
+    text-align: center;
+    font-size: 10px;
+  }
+  #questions{
+    text-align: center; 
+     font-size: 15px;
+  }
+  
+}
