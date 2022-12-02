@@ -36,27 +36,27 @@ function Recipe(recipeName, contributorName, imageURL, ingredientsURL, direction
     
     document.querySelector("#titleBanner h1").innerHTML = this.recipeName;
     document.querySelector("#contributor").innerHTML = this.contributor;
-    document.querySelector("#titleBanner").style.backgroundImage = "url(" + this.imageURL + ")";
+    document.querySelector("#banner").style.backgroundImage = "url(" + this.imageURL + ")";
     loadFileInto(this.ingredients, "#ingredients ul");  
     loadFileInto(this.directions, "#directions ol");  
 
   }
 }
 
-FluffyFrenchToast = new Recipe(
-  "Fluffy French Toast", 
+  NoodleBowlFormula = new Recipe(
+  "Noodle Bowl Formula", 
   "Analysse Palomares", 
   "https://images.unsplash.com/photo-1639108094328-2b94a49b1c2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80", 
   "recipe1-ingredients.html", 
-  "directions.html"
+  "recipe1-directions.html"
 );
 
-IcedMatchaLatte = new Recipe(
-  "Iced Matcha Latte", 
+  CreamyChicken = new Recipe(
+  "Creamy Chicken Ramen Soup with Dill", 
   "Nova Shtrikman", 
   "https://images.unsplash.com/photo-1631308491952-040f80133535?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bWF0Y2hhJTIwbGF0dGV8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60", 
-  "matcha-ingredients.html", 
-  "matcha-directions.html"
+  "ingredients2.html", 
+  "directions2.html"
 );
 
 RosemaryBread = new Recipe(
@@ -71,11 +71,11 @@ RosemaryBread = new Recipe(
 
 window.onload = function() {
   document.querySelector("#firstRecipe").onclick = function(){
-    FluffyFrenchToast.displayRecipe();
+    NoodleBowlFormula.displayRecipe();
   }
   
   document.querySelector("#secondRecipe").onclick = function(){
-    IcedMatchaLatte.displayRecipe();
+    CreamyChicken.displayRecipe();
   }
   
   document.querySelector("#thirdRecipe").onclick = function(){
